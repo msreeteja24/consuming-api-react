@@ -8,6 +8,8 @@ const api = axios.create({
 });
 
 //Now we will the functions (for get, post, delete ..)
-const getPost = api.get("/posts");
+const getPost = () => {
+  api.get("/posts");
+};
 
 export { getPost };
